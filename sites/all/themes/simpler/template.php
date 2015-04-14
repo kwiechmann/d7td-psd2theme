@@ -30,3 +30,30 @@ function simpler_process_zone(&$vars) {
   }
 }
 
+/**
+ * Implements hook_preprocess_node().
+ */
+function simpler_preprocess_node(&$vars) {
+  if (!empty($vars['preprocess_fields']) && in_array('blog_date', $vars['preprocess_fields'])) {
+    $vars['blog_date'] = '';
+    $vars['blog_date'] .= '<div class="blog-date">';
+    $vars['blog_date'] .= '<div class="day">' . format_date($vars['node']->created, 'custom', 'd') . '</div>';
+    $vars['blog_date'] .= '<div class="month">' . format_date($vars['node']->created, 'custom', 'M') . '</div>';
+    $vars['blog_date'] .= '<div class="year">' . format_date($vars['node']->created, 'custom', 'Y') . '</div>';
+    $vars['blog_date'] .= '</div>';
+  }
+
+  if (!empty($vars['preprocess_fields']) && in_array('comment_count', $vars['preprocess_fields'])) {
+    $comment_count = empty($vars['node']->comment_count) ? 0 : $vars['node']->comment_count;
+    $vars['comment_count'] = '';
+    $vars['comment_count'] .= '<div class="comment-count">';
+    $vars['comment_count'] .= $comment_count . ' ' . format_plural($comment_count, 'comment', 'comments');
+    $vars['comment_count'] .= '</div>';
+  }
+  
+  if ($vars['node']->type == 'portfolio'  && !empty($vars['content']['field_portfolio_link'])) {
+    $theme = alpha_get_theme();
+    $portfolio_link_copy = $vars['content']['field_portfolio_link'];
+    $theme->page['title_suffix'] = drupal_render($portfolio_link_copy);
+  }
+}

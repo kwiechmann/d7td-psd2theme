@@ -24,3 +24,137 @@
 #region-branding .logo-img {
   text-align: left;
 }
+h1#page-title {
+  margin-top: -20px;
+  padding-top: 10px;
+}
+.blog-date {
+  float: left;
+  margin-left: -42px;
+  background: url(../images/date-tab.png) no-repeat;
+  height: 90px;
+  width: 72px;
+  text-align: center;
+  padding: 0;
+}
+.blog-date div {
+  display: block;
+  font-family: "Arvo", "Times New Roman", serif;
+  font-weight: 700;
+  color: #fee271;
+  font-size: 14px;
+  line-height: 18px;
+}
+.blog-date div.day {
+  font-size: 21px;
+  line-height: 24px;
+  margin-top: 6px;
+}
+.node-blog .field-name-title,
+.node-blog .field-name-author,
+.node-blog .field-name-field-blog-image,
+.node-blog .field-name-body,
+.node-blog .field-name-node-link,
+.node-blog ul.links, 
+.node-blog div#comments {
+  margin-left: 52px;
+}
+.node-blog .field-name-field-blog-image {
+  margin-bottom: 15px;
+}
+.node-blog .field-name-author {
+  margin-left: 24px;
+}
+
+.view-portfolio .views-row {
+  width: 28%;
+  margin-right: 5%;
+  float: left;
+}
+#zone-content .field-name-field-portfolio-link {
+  display: block;
+  float: right;
+  margin-top: -80px;
+  margin-right: 30px;
+}
+#zone-content #region-content .field-name-field-portfolio-link {
+  display: none;
+}
+#zone-content .field-name-field-portfolio-link a {
+  color: #444444;
+  text-decoration: none;
+}
+body.node-type-portfolio h1#page-title {
+  margin-right: 100px;
+}
+
+.view-related-portfolio-items .views-row {
+  width: 23%;
+  float: left;
+  margin-right: 2%;
+}
+.view-related-projects .views-row img {
+  padding: 7px;
+  background: #ffffff;
+}
+.view-related-projects .views-row h2 {
+  font-size: 100%;
+  font-family: Arial, sans-serif;
+}
+.node-portfolio.view-mode-full .field-name-field-portfolio-image {
+  margin-bottom: 20px;
+}
+.view-related-projects .views-row {
+  float: left;
+  width: 21%;
+  margin: 2%;
+}
+.view-home-page-slideshow .node-unpublished {
+  background: none;
+}
+.view-home-page-slideshow,
+.view-home-page-slideshow .view-mode-teaser .field-name-title a {
+  color: #ffffff;
+}
+.view-home-page-slideshow a {
+  color: #fee271;
+}
+
+.view-home-page-slideshow .view-mode-teaser .field-name-body {
+  font-size: 16px;
+}
+.view-home-page-slideshow  {
+  margin-bottom: 70px;
+  display: block;
+}
+.view-home-page-slideshow .field-name-field-slideshow-image img {
+  padding: 10px;
+  background: #30363c;
+}
+.node-slideshow .group-left {
+  width: 66%;
+}
+.node-slideshow .group-right {
+  width: 34%;
+}
+.node-slideshow .group-right > div {
+  margin-left: 50px;
+}
+
+body.front .block-home-page-slide-show-block {
+  display: block;
+  color: white; 
+  margin-bottom: 35px;
+}
+
+body.front .block-home-page-slide-show-block a {
+  color: #fee271;
+}
+
+body.front .block-home-page-slide-show-block .node-unpublished {
+  background: none;
+}
+
+body.front .views-slideshow-controls-bottom {
+  text-align: center;
+}

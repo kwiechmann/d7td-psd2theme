@@ -9,3 +9,9 @@
 #zone-postscript-wrapper {
   background: url(../images/content-bottom-wide.png) bottom center no-repeat;
 }
+.node-slideshow .group-left {
+  width: 56%;
+}
+.node-slideshow .group-right {
+  width: 44%;
+}

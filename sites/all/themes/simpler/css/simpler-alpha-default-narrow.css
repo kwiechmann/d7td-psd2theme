@@ -12,3 +12,15 @@
 #zone-postscript-wrapper {
   background: url(../images/content-bottom-narrow.png) bottom center no-repeat;
 }
+.node-slideshow .group-left {
+  width: 56%;
+}
+.node-slideshow .group-right {
+  width: 44%;
+}
+.view-home-page-slideshow .view-mode-teaser .field-name-body {
+  font-size: 14px;
+}
+.view-home-page-slideshow .view-mode-teaser .field-name-title h2 {
+  font-size: 22px;
+}
