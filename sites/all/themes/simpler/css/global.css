@@ -23,3 +23,49 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 0em;
 }
+
+#region-branding {
+  margin-top: 32px;
+}
+#region-branding .logo-img {
+  text-align: center;
+  float: none;
+}
+#main-menu {
+  font-family: Arvo,'Times New Roman',serif;
+  font-weight: 700; 
+  font-size: 13px;
+}
+.navigation {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#main-menu li {
+  margin-right: 15px;
+}
+#main-menu li.last {
+  margin-right: 0;
+}
+#main-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#main-menu a:hover,
+#main-menu a:active,
+#main-menu a.active,
+#main-menu a.active-trail {
+  color: #fee271;
+  border-bottom: 3px solid #fee271;
+}
+
+h1#page-title {
+  text-transform: uppercase;
+  padding: 10px 24px 24px 24px;
+  border-bottom: 1px solid #d8d8d8;
+  font-size: 48px;
+}
+body.front h1#page-title {
+  display: none;
+}

@@ -10,3 +10,21 @@
  * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
  * for more information on this topic.
  */
+
+/**
+ * Implements hook_process_zone().
+ */
+function simpler_process_zone(&$vars) {
+  $theme = alpha_get_theme();
+
+  if ($vars['elements']['#zone'] == 'content') {
+    // Since additive only need to do the changes from omega_alpha_process_zone.
+    
+    // Moved iuin from hook_preprocess_region.
+    $vars['title_prefix'] = $theme->page['title_prefix'];
+    $vars['title'] = $theme->page['title'];
+    $vars['title_suffix'] = $theme->page['title_suffix'];
+    $vars['title_hidden'] = $theme->page['title_hidden'];
+  }
+}
+

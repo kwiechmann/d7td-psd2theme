@@ -13,3 +13,14 @@
   margin-bottom: -35px;
   padding-bottom: 47px;
 }
+
+.navigation {
+  text-align: right;
+  margin-top: 65px;
+}
+#region-branding {
+  margin-bottom: 60px;
+}
+#region-branding .logo-img {
+  text-align: left;
+}
